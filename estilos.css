@@ -1,0 +1,275 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #0077b6;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #023e8a;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #90e0ef;
+}
+
+/* Secciones principales */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+form button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #023e8a;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #023e8a;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #90e0ef;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: white;
+}
+/* Animación de escritura */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Fondo dinámico */
+@keyframes gradientBackground {
+    0% { background-color: #ff9a9e; }
+    25% { background-color: #fad0c4; }
+    50% { background-color: #fbc2eb; }
+    75% { background-color: #a18cd1; }
+    100% { background-color: #ff9a9e; }
+}
+
+/* Animación para los títulos */
+@keyframes fadeInUp {
+    from {
+        opacity: 100;
+        transform: translateY(300px);
+    }
+    to {
+        opacity: 2;
+        transform: translateY(10);
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: gradientBackground 10s infinite;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 25rem;
+    color: black;
+    overflow: hidden;
+    border-right: .35em solid black;
+    white-space: nowrap;
+    margin: 5 auto;
+    width: 35ch;
+    animation: typing 5s steps(25, end), blink .5s step-end infinite;
+}
+
+h2 {
+    font-size: 2rem;
+    color: black;
+    margin: 1rem 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+p, li {
+    font-size: 1rem;
+    color: black;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+/* Estilo para imágenes */
+img {
+    width: 50%;
+    max-width: 300px;
+border: 5px solid black}
+    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+form button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    animation: fadeInUp 1.8s ease-in-out forwards;
+}
+
+form button:hover {
+    background: #023e8a;
+}
+
+/* Botón animado */
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.btn:hover {
+    background-color: #444;
+    color: #fff;
+    transform: scale(1.1);
+}
